@@ -1,18 +1,18 @@
 import Authspage from './auths/Authspage';
 import { Flex, Stack, HStack, Heading, Grid, GridItem, Spacer } from '@chakra-ui/layout';
-import { Avatar, AvatarGroup, IconButton, Link, Box, Button, Center, Divider, ButtonGroup, Container, Image, InputGroup, FormControl, FormLabel, Input, Text, Tooltip, InputRightElement, Wrap, WrapItem } from '@chakra-ui/react';
+import { Avatar, AvatarGroup, IconButton, Link, Box, Divider,  Image, InputGroup, FormControl, FormLabel, Input, Text, Tooltip } from '@chakra-ui/react';
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode';
 import { Link as RouteLink } from 'react-router-dom';
 
-import { FaSun, FaMoon, FaGithub, FaPaperPlane, FaHeart, FaTrashAlt, FaUser, FaPowerOff, FaUserPlus } from 'react-icons/fa';
+import { FaSun, FaMoon, FaGithub, FaUser, FaPowerOff, FaUserPlus } from 'react-icons/fa';
 
 // swiper elements
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay, Navigation, Pagination, Controller, Thumbs, EffectFade } from 'swiper';
+import SwiperCore, { Autoplay, Navigation, Pagination, EffectFade } from 'swiper';
 import 'swiper/css';
 
 import { useQuery } from '@apollo/client';
-import { QUERY_USER, QUERY_POSTS, QUERY_SINGLE_POST, QUERY_ME } from '../utils/queries';
+import {  QUERY_POSTS} from '../utils/queries';
 import Auth from '../utils/auth';
 import PostList from '../components/PostList';
 import PostForm from '../components/PostForm';

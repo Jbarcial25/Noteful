@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useMutation, useQuery } from '@apollo/client';
 
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode';
-import { FormControl, FormHelperText, Box, Input, InputGroup, InputRightElement, IconButton, Text, Center, Button, Textarea } from '@chakra-ui/react';
+import { Input, InputGroup, InputRightElement, IconButton, } from '@chakra-ui/react';
 import { FaPaperPlane } from 'react-icons/fa';
 
 import { ADD_POST } from '../../utils/mutations';
@@ -17,9 +17,6 @@ const PostForm = () => {
     //Styles
     const { colorMode, toggleColorMode } = useColorMode();
     const isDark = colorMode === 'dark';
-    const textcolor = useColorModeValue('yellow.900', '#E8DFD8');
-    const bgcolor = useColorModeValue('RGBA(0, 0, 0, 0.16)', 'RGBA(0, 0, 0, 0.36)');
-    const color = useColorModeValue('#ECE8DF', '#BFAE98')
 
 
     const refresh = function () {

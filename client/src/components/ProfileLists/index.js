@@ -1,13 +1,13 @@
 import React from 'react';
-import { Avatar, AvatarGroup, Box, FormControl, FormLabel, FormHelperText, Input, InputGroup, InputRightElement, InputRightAddon, IconButton, Text } from '@chakra-ui/react';
-import { FaSun, FaMoon, FaGithub, FaUser, FaPaperPlane, FaHeart, FaTrashAlt } from 'react-icons/fa';
+import { Avatar, AvatarGroup, Box, FormControl, FormLabel, FormHelperText, Input, InputGroup, InputRightElement, IconButton, Text } from '@chakra-ui/react';
+import {  FaTrashAlt } from 'react-icons/fa';
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode';
 import { Link as RouteLink } from 'react-router-dom';
 
 import { useMutation } from '@apollo/client';
 
 import { REMOVE_POST } from '../../utils/mutations';
-import { QUERY_POSTS, QUERY_ME } from '../../utils/queries';
+import {  QUERY_ME } from '../../utils/queries';
 
 const ProfileList = ({ user, posts, showUsername = true }) => {
 

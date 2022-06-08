@@ -15,7 +15,7 @@ import {
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode';
 import { FaTrashAlt } from 'react-icons/fa';
 
-import { useMutation, useQuery } from '@apollo/client';
+import { useMutation } from '@apollo/client';
 import { REMOVE_COMMENT } from '../../utils/mutations';
 import { QUERY_ME} from '../../utils/queries'
 

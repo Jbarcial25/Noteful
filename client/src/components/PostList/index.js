@@ -1,5 +1,5 @@
-import { Avatar, AvatarGroup, Box, FormControl, FormLabel, FormHelperText, Input, InputGroup, InputRightElement, InputRightAddon, IconButton, Text, Tag, TagLabel, Divider } from '@chakra-ui/react';
-import { FaSun, FaMoon, FaGithub, FaUser, FaPaperPlane, FaHeart, FaTrashAlt, FaUserAlien } from 'react-icons/fa';
+import { Avatar, AvatarGroup, Box, FormControl, FormLabel, Input, InputGroup, InputRightElement, InputRightAddon, IconButton, Text, Tag, TagLabel, Divider } from '@chakra-ui/react';
+import { FaTrashAlt } from 'react-icons/fa';
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode';
 
 import React from 'react';

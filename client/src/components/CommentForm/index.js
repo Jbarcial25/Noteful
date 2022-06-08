@@ -5,24 +5,13 @@ import { useMutation } from '@apollo/client';
 import Auth from '../../utils/auth';
 import { CREATE_COMMENT } from '../../utils/mutations';
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode';
-import { FaComment, FaPaperPlane } from 'react-icons/fa';
+import { FaComment } from 'react-icons/fa';
 
 import {
-  Avatar,
-  AvatarGroup,
-  Box,
-  Fade,
-  FormControl,
-  FormLabel,
-  ScaleFade, 
-  Slide, 
-  SlideFade,
   IconButton,
   Input,
   InputGroup,
   InputRightElement,
-  Text,
-  Textarea,
   Container
 } from '@chakra-ui/react';
 
@@ -31,9 +20,6 @@ const CommentForm = ({ postId }) => {
   //Styles
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === 'dark';
-  const textcolor = useColorModeValue('yellow.900', '#E8DFD8');
-  const bgcolor = useColorModeValue('RGBA(0, 0, 0, 0.16)', 'RGBA(0, 0, 0, 0.36)');
-  const color = useColorModeValue('#ECE8DF', '#BFAE98');
 
   const [commentText, setCommentText] = useState('');
   const [characterCount, setCharacterCount] = useState(0);

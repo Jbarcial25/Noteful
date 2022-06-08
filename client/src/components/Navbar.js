@@ -1,53 +1,33 @@
-import React, { Component } from 'react';
-import { Flex, Stack, VStack, Spacer } from '@chakra-ui/layout';
+import React from 'react';
+import { Flex, Stack, Spacer } from '@chakra-ui/layout';
 import {
-  Input,
-  Box,
-  Center,
-  Container,
-  Divider,
-  FormControl,
-  FormLabel,
-  Grid,
-  GridItem,
-  Button,
-  ButtonGroup,
-  IconButton,
-  Image,
-  Link,
-  InputGroup,
-  InputRightElement,
-  SimpleGrid,
-  StackDivider,
-  Text,
-  Textarea,
-  Wrap,
-  WrapItem,
+    IconButton,
+    Link,
+
 } from '@chakra-ui/react';
 
 import { useColorMode, useColorModeValue } from '@chakra-ui/color-mode';
-import { FaSun, FaMoon, FaGithub, FaUser, FaPaperPlane, FaHeart, FaTrashAlt } from 'react-icons/fa';
+import { FaSun, FaMoon, FaGithub, FaUser } from 'react-icons/fa';
 
 
 const Navbar = ({ loggedIn, setLoggedIn }) => {
 
     const { colorMode, toggleColorMode } = useColorMode();
     const isDark = colorMode === 'dark';
-    const textcolor = useColorModeValue('yellow.900', '#E8DFD8');
     const bgcolor = useColorModeValue('RGBA(0, 0, 0, 0.16)', 'RGBA(0, 0, 0, 0.36)');
 
     let [value, setValue] = React.useState('')
 
     let handleInputChange = (e) => {
-    let inputValue = e.target.value;
-    setValue(inputValue);
+        let inputValue = e.target.value;
+        setValue(inputValue);
     };
 
     return (
         <Stack p={5}>
             <Flex w='100%'>
                 <Spacer></Spacer>
-                
+
                 {loggedIn ? (
                     <IconButton
                         ml={8}
@@ -64,9 +44,9 @@ const Navbar = ({ loggedIn, setLoggedIn }) => {
                                 isRound='true'
                                 backgroundColor={bgcolor}
                             ></IconButton>
-                            </Link>
+                        </Link>
 
-                            <IconButton
+                        <IconButton
                             ml={8}
                             icon={isDark ? <FaSun /> : <FaMoon />}
                             isRound='true'
@@ -75,9 +55,9 @@ const Navbar = ({ loggedIn, setLoggedIn }) => {
                         ></IconButton>
                     </>
                 )}
-                
 
-                
+
+
             </Flex>
 
         </Stack>
