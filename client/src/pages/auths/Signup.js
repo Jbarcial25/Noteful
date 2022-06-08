@@ -35,7 +35,7 @@ const Signup = () => {
 
   // uploads 's profile picture
   //added somethings
-  (() => {
+  useEffect(() => {
     if(userPic) {
       submitHandler()
     }
